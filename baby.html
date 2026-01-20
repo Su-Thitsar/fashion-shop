@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Design</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/images.png" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-navbar py-1 fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand custom-brand" href="index.html"
+          >Fashion Design</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-3">
+              <a class="nav-link nav-text" href="men.html">MEN</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link nav-text" href="women.html">WOMEN</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link nav-text" href="kids.html">KIDS</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link nav-text" href="index.html">BABY</a>
+            </li>
+          </ul>
+
+          <!-- Search + Shopping Cart -->
+          <div class="d-flex align-items-center ms-auto">
+            <!-- Search Box -->
+            <form class="d-flex me-3" onsubmit="showSearchResults(event)">
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="searchInput"
+                  class="form-control"
+                  placeholder="Search Clothes"
+                />
+                <button class="btn btn-white" type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </form>
+            <!-- Shopping Cart Icon -->
+            <a href="cart.html" class="text-white position-relative">
+              <i class="fa-solid fa-cart-shopping fa-lg"></i>
+              <!-- Optional: badge for number of items in cart -->
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+              >
+                3
+              </span>
+            </a>
+
+            <!-- Account Icon -->
+            <a href="account.html" class="text-white ms-4">
+              <i class="fa-solid fa-user fa-lg me-3"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- First Row -->
+    <div class="container mt-5 pt-5">
+      <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img
+              src="https://net.wimg.tw/files/1/products/653369_400_301E781B0E7B289E7B485.jpg?v=31331"
+              class="img-fluid product-img"
+              alt="Product 1"
+            />
+            <div class="color-dots mt-3">
+              <span class="dot black"></span>
+              <span class="dot beige"></span>
+              <span class="dot pink"></span>
+            </div>
+            <h5 class="product-title mt-3">
+              BABY Mid-Length Hooded Jacket with Padded Lining and Plush Finish
+            </h5>
+            <p class="product-price">NT.899</p>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img
+              src="https://net.wimg.tw/files/1/products/651086_400_301E781B0E7B289E7B485.jpg?v=31331"
+              class="img-fluid product-img"
+              alt="Product 2"
+            />
+            <div class="color-dots mt-3">
+              <span class="dot cream"></span>
+              <span class="dot navy"></span>
+              <span class="dot red"></span>
+            </div>
+            <h5 class="product-title mt-3">
+              BABY Mid-Length Hooded Jacket with Padded Lining and Fleece Trim
+            </h5>
+            <p class="product-price">NT.1190</p>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img
+              src="https://net.wimg.tw/files/1/products/649563_400_314E7B289E7B485.jpg?v=31331"
+              class="img-fluid product-img"
+              alt="Product 3"
+            />
+            <div class="color-dots mt-3">
+              <span class="dot black"></span>
+              <span class="dot beige"></span>
+              <span class="dot pink"></span>
+            </div>
+            <h5 class="product-title mt-3">
+              BABY Coral Fleece Thick Top (Unisex)
+            </h5>
+            <p class="product-price">NT.1750</p>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img
+              src="https://net.wimg.tw/files/1/products/656075_400_101E6B7BAE58DA1E585B6.jpg?v=31331"
+              class="img-fluid product-img"
+              alt="Product 4"
+            />
+            <div class="color-dots mt-3">
+              <span class="dot cream"></span>
+              <span class="dot navy"></span>
+              <span class="dot red"></span>
+            </div>
+            <h5 class="product-title mt-3">
+              BABY Plush Bear Ear Hooded Jacket (Unisex)
+            </h5>
+            <p class="product-price">NT.339</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="container mt-3 pt-3">
+      <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img
+              src="https://net.wimg.tw/files/1/products/653411_400_324E7B485E889B2.jpg?v=31331"
+              class="img-fluid product-img"
+              alt="Product 1"
+            />
+            <div class="color-dots mt-3">
+              <span class="dot black"></span>
+              <span class="dot beige"></span>
+              <span class="dot pink"></span>
+            </div>
+            <h5 class="product-title mt-3">
+              BABY Lackland Sleeve Color Block College T-Shirt (Unisex)
+            </h5>
+            <p class="product-price">NT.559</p>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img
+              src="https://net.wimg.tw/files/1/products/645615_400_102E58DA1E585B6.jpg?v=31331"
+              class="img-fluid product-img"
+              alt="Product 2"
+            />
+            <div class="color-dots mt-3">
+              <span class="dot cream"></span>
+              <span class="dot navy"></span>
+              <span class="dot red"></span>
+            </div>
+            <h5 class="product-title mt-3">
+              BABY elbow patch fleece top (unisex)
+            </h5>
+            <p class="product-price">NT.320</p>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img
+              src="https://net.wimg.tw/files/1/products/653361_400_003E7B1B3E799BD.jpg?v=31331"
+              class="img-fluid product-img"
+              alt="Product 3"
+            />
+            <div class="color-dots mt-3">
+              <span class="dot black"></span>
+              <span class="dot beige"></span>
+              <span class="dot pink"></span>
+            </div>
+            <h5 class="product-title mt-3">BABY Furry Hooded Jacket</h5>
+            <p class="product-price">NT.559</p>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-md-3 col-sm-6">
+          <div class="product-card">
+            <img
+              src="https://net.wimg.tw/files/1/products/657844_400_003E7B1B3E799BD.jpg?v=31331"
+              class="img-fluid product-img"
+              alt="Product 4"
+            />
+            <div class="color-dots mt-3">
+              <span class="dot cream"></span>
+              <span class="dot navy"></span>
+              <span class="dot red"></span>
+            </div>
+            <h5 class="product-title mt-3">
+              BABY Plush Bear Ear Hooded Jacket (Unisex)
+            </h5>
+            <p class="product-price">NT.339</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="custom-footer">
+      <div class="container py-4">
+        <div class="row">
+          <!-- ABOUT -->
+          <div class="col-lg-2 col-md-6 mb-3">
+            <h5 class="footer-title">ABOUT .FASHION</h5>
+            <ul class="footer-list">
+              <li><a href="#">Brand Story</a></li>
+              <li><a href="#">Store locations</a></li>
+              <li><a href="#">Talent Recruitment</a></li>
+            </ul>
+          </div>
+
+          <!-- SHOPPING GUIDE -->
+          <div class="col-lg-2 col-md-6 mb-3">
+            <h5 class="footer-title">SHOPPING GUIDE</h5>
+            <ul class="footer-list">
+              <li><a href="#">Ordering process</a></li>
+              <li><a href="#">Ten-day appreciation period</a></li>
+              <li>
+                <a href="#">All products in Taiwan have been modified.</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- MEMBERSHIP -->
+          <div class="col-lg-2 col-md-6 mb-3">
+            <h5 class="footer-title">MEMBERSHIP SERVICES</h5>
+            <ul class="footer-list">
+              <li><a href="#">Member Center</a></li>
+              <li><a href="#">Customer Service Center</a></li>
+            </ul>
+          </div>
+
+          <!-- DECLARATION TERMS -->
+          <div class="col-lg-2 col-md-6 mb-3">
+            <h5 class="footer-title">DECLARATION TERMS</h5>
+            <ul class="footer-list">
+              <li><a href="#">Privacy protection</a></li>
+              <li><a href="#">Government policy promotion</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+
+          <!-- NEWSLETTER -->
+          <div class="col-lg-2 col-md-6 mb-3 newsletter-section">
+            <h5 class="footer-title small">NEWSLETTER</h5>
+            <div class="newsletter-row d-flex">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Enter E-mail"
+              />
+              <button class="btn btn-dark">Subscribe</button>
+            </div>
+          </div>
+
+          <!-- FOLLOW US -->
+          <div class="col-lg-2 col-md-4 mb-3 text-center">
+            <h5 class="footer-title">FOLLOW US ON</h5>
+            <div class="social-icons mb-3">
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-line"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- BACK TO TOP -->
+        <div class="text-center mb-2">
+          <a href="#" class="back-to-top">
+            <i class="bi bi-arrow-up-circle-fill"></i>
+          </a>
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="text-center footer-copy">
+          COPYRIGHT@FASHION CO., LTD. ALL RIGHTS RESERVED.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
