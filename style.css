@@ -1,0 +1,267 @@
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+/* Navbar background */
+.bg-navbar {
+  background-color: #868686 !important; /* dark gray background */
+}
+
+/* Navbar brand (Fashion Design) */
+.navbar-brand {
+  color: white; /* white text */
+  font-weight: 700; /* bold */
+  font-family: "Playfair Display", serif; /* elegant font */
+  text-transform: uppercase; /* all caps */
+  letter-spacing: 1px; /* spacing between letters */
+  font-size: 1.5rem; /* adjust size */
+  text-align: center; /* center alignment */
+  font-style: italic;
+}
+
+.luxury-text {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+.navbar-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Navbar links */
+.navbar .nav-link.nav-text {
+  color: white; /* white text */
+  font-family: "Lato", sans-serif; /* clean font for links */
+  font-weight: 600; /* semi-bold */
+  text-transform: uppercase; /* all caps */
+  letter-spacing: 0.5px; /* small spacing for links */
+  transition: color 0.3s ease; /* smooth hover effect */
+  text-align: center;
+}
+
+/* Navbar links hover effect */
+.navbar .nav-link.nav-text:hover {
+  color: #f2f2f2; /* lighter color on hover */
+}
+
+/* Active menu item style */
+.active {
+  font-weight: 600;
+  border-bottom: 2px solid dark; /* gold */
+  color: dark !important;
+}
+
+/* Hover effect for menu links */
+.navbar-nav a:hover {
+  color: black !important;
+  border-bottom: 2px solid black;
+}
+
+/* Navbar links */
+.navbar .nav-link.nav-text {
+  color: white; /* text color */
+  font-family: "Playfair Display", serif; /* change to your preferred font */
+  font-weight: 600; /* make text a bit bold */
+  text-transform: uppercase; /* optional: makes text all caps */
+  transition: color 0.3s ease; /* smooth hover effect */
+}
+
+/* Navbar link hover */
+.navbar .nav-link.nav-text:hover {
+  color: #f2f2f2; /* lighter color on hover */
+}
+
+/* Make search button white */
+.btn-white {
+  background-color: white; /* button background */
+  color: #868686; /* icon color */
+  border: 1px solid #ccc; /* optional border */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.btn-white:hover {
+  background-color: #f2f2f2; /* slightly lighter on hover */
+  color: #868686; /* keep icon color consistent */
+}
+
+/* Carousel caption background */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+/* Make carousel images smaller */
+.carousel-img {
+  width: 80%; /* change to 40% or 50% if you want smaller */
+  height: auto;
+}
+.custom-footer {
+  background-color: #868686; /* same color as your screenshot */
+  color: #ffffff;
+}
+
+/* Footer */
+
+.custom-footer {
+  background-color: #868686;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 6px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.footer-list a:hover {
+  opacity: 0.7;
+}
+
+/* NEWSLETTER ROW */
+.newsletter-section {
+  margin-top: 30px; /* move slightly lower */
+}
+
+.newsletter-row {
+  display: flex;
+  gap: 6px;
+}
+
+.newsletter-row input {
+  flex: 1;
+  padding: 6px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.newsletter-row button {
+  padding: 6px 10px;
+  background: white;
+  color: #868686;
+  font-size: 12px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* SOCIAL ICONS */
+.social-icons i {
+  font-size: 22px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.social-icons i:hover {
+  opacity: 0.7;
+}
+
+/* Back to top arrow */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  font-size: 40px;
+  color: #555;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.back-to-top:hover {
+  color: #555;
+}
+
+.footer-copy {
+  font-size: 12px;
+}
+
+.btn-custom {
+  background-color: #433e37 !important;
+  border-color: #433e37 !important;
+  color: white !important;
+}
+
+.btn-custom:hover {
+  background-color: #2f2b26 !important; /* darker shade */
+  border-color: #2f2b26 !important;
+}
+
+/*for men*/
+.product-card {
+  text-align: center;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Color dots  for men*/
+.color-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+/* Colors */
+.black {
+  background-color: #000;
+}
+.beige {
+  background-color: #c2b29a;
+}
+.pink {
+  background-color: #f4b7b7;
+}
+
+.cream {
+  background-color: #efe9dd;
+}
+.navy {
+  background-color: #2e344f;
+}
+.red {
+  background-color: #7e1f24;
+}
+
+/* Text styles */
+.product-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product-price {
+  font-size: 15px;
+  margin-top: -5px;
+}
