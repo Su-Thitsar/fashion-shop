@@ -1,0 +1,60 @@
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.login-header {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.login-header i {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding-left: 40px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.input-group-wrapper {
+  position: relative;
+}
+
+.btn-login {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
